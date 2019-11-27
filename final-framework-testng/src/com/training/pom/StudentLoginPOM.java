@@ -16,13 +16,19 @@ package com.training.pom;
 		public StudentLoginPOM()  {
 			PageFactory.initElements(driver, this);	
 			}	
-		@FindBy(xpath ="//*[@id='login']")
-		WebElement username;
-		@FindBy(xpath ="//*[@id=\'password\']")
-		WebElement password;
-		@FindBy(xpath ="//*[@id=\'form-login_submitAuth\']")
-	    WebElement login;
+//		@FindBy(xpath ="//*[@id='login']")
+//		WebElement username;
+//		@FindBy(xpath ="//*[@id=\'password\']")
+//		WebElement password;
+//		@FindBy(xpath ="//*[@id=\'form-login_submitAuth\']")
+//	    WebElement login;
 		
+		        @FindBy(id ="login")
+				WebElement username;
+				@FindBy(id ="password")
+				WebElement password;
+				@FindBy(id ="form-login_submitAuth")
+			    WebElement login;
 		
 		
 		

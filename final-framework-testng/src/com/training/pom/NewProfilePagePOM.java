@@ -18,8 +18,12 @@ public class NewProfilePagePOM extends SeleniumMethodsPOM {
 		}
 		
 		public String profiletext;
-		@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div/div[1]")
+//		@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div/div[1]")
+//		WebElement newprofilepage;
+		
+		@FindBy(xpath="//div[@class='alert alert-info']")
 		WebElement newprofilepage;
+		
 		
 		public String getMessage()
 		{

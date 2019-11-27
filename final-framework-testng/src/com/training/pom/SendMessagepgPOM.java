@@ -13,10 +13,17 @@ public class SendMessagepgPOM extends SeleniumMethodsPOM {
 		}
 	
 	
-	@FindBy(xpath =("//*[@id=\'lost_password_user\']"))
+//	@FindBy(xpath =("//*[@id=\'lost_password_user\']"))
+//    WebElement usernamebox;
+	
+	@FindBy(id ="lost_password_user")
     WebElement usernamebox;
+	
 
-	@FindBy(xpath =("//*[@id=\'lost_password_submit\']"))
+//	@FindBy(xpath =("//*[@id=\'lost_password_submit\']"))
+//    WebElement sendmessagelink;
+	
+	@FindBy(id ="lost_password_submit")
     WebElement sendmessagelink;
 	
 	

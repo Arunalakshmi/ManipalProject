@@ -1,4 +1,4 @@
-package com.training.test;
+package com.training.simple.test;
 
 import org.testng.annotations.Test;
 
@@ -22,7 +22,7 @@ public class SignupTest extends SeleniumMethodsPOM {
 		new RegisterPagePOM().UpdateForms()
 		.ClickRegister();
 		String ar = new ConfirmationPagePOM().getMessage();
-		if(ar.contains("Dear Kavitha Siva"))
+		if(ar.contains("Dear"))
 		{
 			System.out.println("Test Passed");
 		}

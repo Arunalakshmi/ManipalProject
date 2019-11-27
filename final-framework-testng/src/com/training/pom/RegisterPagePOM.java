@@ -17,36 +17,55 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 		
 	}
 
-	@FindBy(xpath =("//*[@id=\'registration_firstname\']"))
+//	@FindBy(xpath =("//*[@id=\'registration_firstname\']"))
+//    WebElement firstname;
+//	@FindBy(xpath ="//*[@id=\'registration_lastname\']")
+//    WebElement lastname;
+//	@FindBy(xpath ="//*[@id=\'registration_email\']")
+//    WebElement email;
+//	@FindBy(xpath ="//*[@id=\"username\"]")
+//    WebElement username;
+//	@FindBy(xpath ="//*[@id=\'pass1\']")
+//    WebElement password;
+//	@FindBy(xpath ="//*[@id=\'pass2\']")
+//    WebElement confirmpw;
+//	@FindBy(xpath ="//*[@id=\'registration_phone\']")
+//    WebElement phone;
+//	//@FindBy(xpath ="//*[@id=\'registration\']/fieldset/div[9]/div[1]/div/button/div/div/div")
+//    //WebElement language;
+//	@FindBy(xpath ="//*[@id=\'registration_submit\']")
+//    WebElement register;
+	
+	@FindBy(id ="registration_firstname")
     WebElement firstname;
-	@FindBy(xpath ="//*[@id=\'registration_lastname\']")
+	@FindBy(id ="registration_lastname")
     WebElement lastname;
-	@FindBy(xpath ="//*[@id=\'registration_email\']")
+	@FindBy(id ="registration_email")
     WebElement email;
-	@FindBy(xpath ="//*[@id=\"username\"]")
+	@FindBy(id ="username")
     WebElement username;
-	@FindBy(xpath ="//*[@id=\'pass1\']")
+	@FindBy(id ="pass1")
     WebElement password;
-	@FindBy(xpath ="//*[@id=\'pass2\']")
+	@FindBy(id ="pass2")
     WebElement confirmpw;
-	@FindBy(xpath ="//*[@id=\'registration_phone\']")
+	@FindBy(id ="registration_phone")
     WebElement phone;
-	//@FindBy(xpath ="//*[@id=\'registration\']/fieldset/div[9]/div[1]/div/button/div/div/div")
-    //WebElement language;
-	@FindBy(xpath ="//*[@id=\'registration_submit\']")
+	@FindBy(xpath ="//*[@id=\'registration\']/fieldset/div[9]/div[1]/div/button/div/div/div")
+    WebElement language;
+	@FindBy(id ="registration_submit")
     WebElement register;
 	
 
 	
 	public RegisterPagePOM UpdateForms()
 	{
-		firstname.sendKeys("Kavitha");
-		lastname.sendKeys("Siva");
+		firstname.sendKeys("roja");
+		lastname.sendKeys("raja");
 		email.sendKeys("kavisiva@gmail.com");
-		username.sendKeys("kavisiva");
-		password.sendKeys("kavitha123$");
-		confirmpw.sendKeys("kavitha123$");
-		phone.sendKeys("9943107030");
+		username.sendKeys("rojaraji");
+		password.sendKeys("rojaraji123$");
+		confirmpw.sendKeys("rojaraji123$");
+		phone.sendKeys("99431070301");
 		//language.sendKeys("English");
 		return this;
 		}

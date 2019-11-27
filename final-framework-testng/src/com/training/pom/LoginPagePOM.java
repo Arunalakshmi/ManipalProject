@@ -12,10 +12,20 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 		PageFactory.initElements(driver, this);	
 		}	
 	
-	@FindBy(xpath ="//*[@id=\'login-block\']/div/ul/li[1]/a")
+//	@FindBy(xpath ="//*[@id=\'login-block\']/div/ul/li[1]/a")
+//    WebElement signup;
+	
+	@FindBy(xpath ="//a[contains(text(),'Sign up!')]")
     WebElement signup;
-	@FindBy(xpath ="//*[@id=\"login-block\"]/div/ul/li[2]/a")
+	
+	
+//	@FindBy(xpath ="//*[@id=\"login-block\"]/div/ul/li[2]/a")
+//    WebElement lostmypassword;
+	
+	@FindBy(xpath ="//a[contains(text(),'I lost my password')]")
     WebElement lostmypassword;
+	
+	
 	
 	
 	public RegisterPagePOM clicksignup()

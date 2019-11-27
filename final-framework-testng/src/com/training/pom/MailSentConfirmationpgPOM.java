@@ -14,7 +14,10 @@ public class MailSentConfirmationpgPOM extends SeleniumMethodsPOM {
 	
 	
 	public String mailacknowledge;
-	@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div[1]/div/div")
+//	@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div[1]/div/div")
+//	WebElement acknowledgemessage;
+	
+	@FindBy(xpath="//div[@class='alert alert-info']")
 	WebElement acknowledgemessage;
 	
 	public String getMessage()

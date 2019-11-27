@@ -16,14 +16,23 @@ public class SocialNetworkpgPOM extends SeleniumMethodsPOM {
 			PageFactory.initElements(driver, this);
 			
 		}
-		
-		@FindBy(xpath ="//*[@id=\'profile_password0\']")
+//		
+//		@FindBy(xpath ="//*[@id=\'profile_password0\']")
+//	    WebElement pass;
+//		@FindBy(xpath ="//*[@id=\'password1\']")
+//	    WebElement newpass;
+//		@FindBy(xpath ="//*[@id=\'profile_password2\']")
+//	    WebElement confirmpass;
+//		@FindBy(xpath ="//*[@id=\'profile_apply_change\']")
+//	    WebElement savebutton;
+//		
+		@FindBy(id ="profile_password0")
 	    WebElement pass;
-		@FindBy(xpath ="//*[@id=\'password1\']")
+		@FindBy(id ="password1")
 	    WebElement newpass;
-		@FindBy(xpath ="//*[@id=\'profile_password2\']")
+		@FindBy(id ="profile_password2")
 	    WebElement confirmpass;
-		@FindBy(xpath ="//*[@id=\'profile_apply_change\']")
+		@FindBy(id ="profile_apply_change")
 	    WebElement savebutton;
 		
 		

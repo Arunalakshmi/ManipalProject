@@ -22,6 +22,13 @@ package com.training.pom;
 		WebElement password;
 		@FindBy(xpath ="//*[@id=\'form-login_submitAuth\']")
 	    WebElement login;
+		
+//		@FindBy(id ="login")
+//		WebElement username;
+//		@FindBy(id ="password")
+//		WebElement password;
+//		@FindBy(id="form-login_submitAuth")
+//	    WebElement login;
 	
 		
 		
