@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 
 
 import com.training.pom.CoursePagePOM;
+import com.training.pom.LoginPagePOM;
 import com.training.pom.SeleniumMethodsPOM;
-import com.training.pom.StudentLoginPOM;
 
 public class StudentloginTest extends SeleniumMethodsPOM {
 
@@ -20,9 +20,9 @@ public class StudentloginTest extends SeleniumMethodsPOM {
 	public void ClickingSignin() throws InterruptedException
 	{
 		
-		new StudentLoginPOM().clicklogin();
+		new LoginPagePOM().clicklogin();
 		String message = new CoursePagePOM().getMessage();
-		if(message.contains("Hello Kavitha Siva and welcome"))
+		if(message.contains("welcome"))
 		{
 			System.out.println("Test Passed");
 		}

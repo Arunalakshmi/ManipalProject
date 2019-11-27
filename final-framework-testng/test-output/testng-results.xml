@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-26T17:35:21 IST" name="Default suite" finished-at="2019-11-26T17:35:43 IST" duration-ms="21856">
+  <suite started-at="2019-11-27T21:52:59 IST" name="Default suite" finished-at="2019-11-27T21:53:27 IST" duration-ms="28174">
     <groups>
     </groups>
-    <test started-at="2019-11-26T17:35:21 IST" name="Default test" finished-at="2019-11-26T17:35:43 IST" duration-ms="21856">
-      <class name="com.training.test.LostMyPasswordTest">
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.training.test.LostMyPasswordTest@d4342c2]" started-at="2019-11-26T17:35:21 IST" name="BeforeMethod" finished-at="2019-11-26T17:35:37 IST" duration-ms="16413" status="PASS">
+    <test started-at="2019-11-27T21:52:59 IST" name="Default test" finished-at="2019-11-27T21:53:27 IST" duration-ms="28174">
+      <class name="com.training.simple.test.SignupTest">
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.training.simple.test.SignupTest@419c5f1a]" started-at="2019-11-27T21:52:59 IST" name="BeforeMethod" finished-at="2019-11-27T21:53:20 IST" duration-ms="20953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="SendingMessage()[pri:0, instance:com.training.test.LostMyPasswordTest@d4342c2]" started-at="2019-11-26T17:35:37 IST" name="SendingMessage" finished-at="2019-11-26T17:35:43 IST" duration-ms="5371" status="PASS">
+        <test-method signature="VerifyRegistration()[pri:0, instance:com.training.simple.test.SignupTest@419c5f1a]" started-at="2019-11-27T21:53:20 IST" name="VerifyRegistration" finished-at="2019-11-27T21:53:27 IST" duration-ms="7138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SendingMessage -->
-      </class> <!-- com.training.test.LostMyPasswordTest -->
+        </test-method> <!-- VerifyRegistration -->
+      </class> <!-- com.training.simple.test.SignupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

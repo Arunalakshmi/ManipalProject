@@ -26,7 +26,6 @@ public class CoursePagePOM extends SeleniumMethodsPOM {
 		
 		@FindBy(xpath="//section[@id='cm-content']//p[1]")
 		WebElement loginsuccess_message;
-	
 		@FindBy(xpath="//a[contains(text(),'Edit profile')]")
 		WebElement profilelink;
 		

@@ -4,10 +4,9 @@ import org.testng.annotations.Test;
 
 
 import com.training.pom.CoursePagePOM;
-import com.training.pom.NewProfilePagePOM;
+import com.training.pom.LoginPagePOM;
 import com.training.pom.SeleniumMethodsPOM;
 import com.training.pom.SocialNetworkpgPOM;
-import com.training.pom.StudentLoginPOM;
 
 public class EditMyProfileTest extends SeleniumMethodsPOM {
 
@@ -15,7 +14,7 @@ public class EditMyProfileTest extends SeleniumMethodsPOM {
 	public void BeforeMethod() {
 		startapp();
 		
-		new StudentLoginPOM().clicklogin();
+		new LoginPagePOM().clicklogin();
 		
 	}
 	
@@ -24,9 +23,8 @@ public class EditMyProfileTest extends SeleniumMethodsPOM {
 	{
 		
 		new CoursePagePOM().clickprofilelink();
-		new SocialNetworkpgPOM().editdetails();
+		String profiletext = new SocialNetworkpgPOM().editdetails().clicksave().getMessage();
 		
-		String profiletext = new NewProfilePagePOM().getMessage();
 		if(profiletext.contains("Your new profile has been saved"))
 		{
 			System.out.println("Test Passed");

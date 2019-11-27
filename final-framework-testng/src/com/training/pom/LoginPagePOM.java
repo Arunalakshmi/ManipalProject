@@ -25,10 +25,37 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 	@FindBy(xpath ="//a[contains(text(),'I lost my password')]")
     WebElement lostmypassword;
 	
+	@FindBy(id ="login")
+	WebElement username;
+	@FindBy(id ="password")
+	WebElement password;
+	@FindBy(id ="form-login_submitAuth")
+    WebElement login;
+	public String mailacknowledge;
+//	@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div[1]/div/div")
+//	WebElement acknowledgemessage;
 	
+	@FindBy(xpath="//div[@class='alert alert-info']")
+	WebElement acknowledgemessage;
 	
-	
-	public RegisterPagePOM clicksignup()
+	public String getMessage()
+	{
+		mailacknowledge =acknowledgemessage.getText();
+		
+		return mailacknowledge;
+}
+
+
+public CoursePagePOM clicklogin()
+{
+username.sendKeys("kavisiva");
+password.sendKeys("kavitha123$");
+login.click();
+return new CoursePagePOM();
+
+}
+
+public RegisterPagePOM clicksignup()
 	{
 		signup.click();
 		return new RegisterPagePOM();	
@@ -38,6 +65,8 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 		lostmypassword.click();
 		return new SendMessagepgPOM();
 	}
+	
+	
 	
 			
 			

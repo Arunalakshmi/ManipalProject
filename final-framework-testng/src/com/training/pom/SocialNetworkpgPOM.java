@@ -35,17 +35,46 @@ public class SocialNetworkpgPOM extends SeleniumMethodsPOM {
 		@FindBy(id ="profile_apply_change")
 	    WebElement savebutton;
 		
+		public String profiletext;
+//		@FindBy(xpath="//*[@id=\'cm-content\']/div/div[2]/div/div[1]")
+//		WebElement newprofilepage;
+		
+		@FindBy(xpath="//div[@class='alert alert-info']")
+		WebElement newprofilesaved;
 		
 		
+		public String getMessage()
+		{
+			 profiletext = newprofilesaved.getText();
+			
+			return profiletext;
+}
 		
-		public NewProfilePagePOM editdetails()
+		
+		public SocialNetworkpgPOM editdetails()
 		{
 			pass.sendKeys("kavitha123$");
 			newpass.sendKeys("aruna123$");
 			confirmpass.sendKeys("aruna123$");
-			savebutton.click();
 			
-			return new NewProfilePagePOM();
+			
+			return this;
 			}
+		
+		public SocialNetworkpgPOM clicksave() {
+		
+		savebutton.click();
+		
+		return this;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }
 		

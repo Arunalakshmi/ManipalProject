@@ -17,9 +17,9 @@ public class ConfirmationPagePOM extends SeleniumMethodsPOM {
 //	@FindBy(xpath="//*[@id='cm-content']/div/div[2]/div")
 //	WebElement cfrm_message;
 	
-	@FindBy(xpath="//section[@id='cm-content']//p[1]")
+	@FindBy(xpath="//body/main[@id='main']/section[@id='cm-content']/div[@class='container']/div[@class='row']/div[@class='col-xs-12 col-md-12']/p[1]")
 	WebElement cfrm_message;
-	
+
 	
 	
 	

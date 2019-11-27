@@ -36,6 +36,11 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 //	@FindBy(xpath ="//*[@id=\'registration_submit\']")
 //    WebElement register;
 	
+
+	
+	
+	@FindBy(xpath ="//input[@class='register-profile']")
+    WebElement radio;
 	@FindBy(id ="registration_firstname")
     WebElement firstname;
 	@FindBy(id ="registration_lastname")
@@ -50,7 +55,7 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
     WebElement confirmpw;
 	@FindBy(id ="registration_phone")
     WebElement phone;
-	@FindBy(xpath ="//*[@id=\'registration\']/fieldset/div[9]/div[1]/div/button/div/div/div")
+	@FindBy(xpath ="//select[@id='registration_language']")
     WebElement language;
 	@FindBy(id ="registration_submit")
     WebElement register;
@@ -59,14 +64,15 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 	
 	public RegisterPagePOM UpdateForms()
 	{
-		firstname.sendKeys("roja");
-		lastname.sendKeys("raja");
+		firstname.sendKeys("rovi");
+		lastname.sendKeys("chapp");
 		email.sendKeys("kavisiva@gmail.com");
-		username.sendKeys("rojaraji");
-		password.sendKeys("rojaraji123$");
-		confirmpw.sendKeys("rojaraji123$");
+		username.sendKeys("rovichappa");
+		password.sendKeys("rovichap123$");
+		confirmpw.sendKeys("rovichap123$");
 		phone.sendKeys("99431070301");
-		//language.sendKeys("English");
+		selectDropDownUsingText(language, "English");
+		
 		return this;
 		}
 	
@@ -76,6 +82,12 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 		register.click();
 		return new ConfirmationPagePOM();
 		
+	}
+	
+	public Boolean radioValue() {
+		
+		Boolean rad_Val = radio.isSelected();
+		return rad_Val;
 	}
 	
 	

@@ -27,10 +27,10 @@ public class SendMessagepgPOM extends SeleniumMethodsPOM {
     WebElement sendmessagelink;
 	
 	
-	public MailSentConfirmationpgPOM TypeUserName()
+	public LoginPagePOM TypeUserName()
 	{
 		usernamebox.sendKeys("kavisiva@gmail.com");
 		sendmessagelink.click();
-		return new MailSentConfirmationpgPOM();
+		return new LoginPagePOM();
 	}
 }
