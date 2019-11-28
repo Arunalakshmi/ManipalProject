@@ -1,94 +1,62 @@
 package com.training.pom;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPagePOM extends SeleniumMethodsPOM {
-	
-	
-	public RegisterPagePOM()
-	{
-		
+
+	public RegisterPagePOM() {
+
 		PageFactory.initElements(driver, this);
-		
+
 	}
 
-//	@FindBy(xpath =("//*[@id=\'registration_firstname\']"))
-//    WebElement firstname;
-//	@FindBy(xpath ="//*[@id=\'registration_lastname\']")
-//    WebElement lastname;
-//	@FindBy(xpath ="//*[@id=\'registration_email\']")
-//    WebElement email;
-//	@FindBy(xpath ="//*[@id=\"username\"]")
-//    WebElement username;
-//	@FindBy(xpath ="//*[@id=\'pass1\']")
-//    WebElement password;
-//	@FindBy(xpath ="//*[@id=\'pass2\']")
-//    WebElement confirmpw;
-//	@FindBy(xpath ="//*[@id=\'registration_phone\']")
-//    WebElement phone;
-//	//@FindBy(xpath ="//*[@id=\'registration\']/fieldset/div[9]/div[1]/div/button/div/div/div")
-//    //WebElement language;
-//	@FindBy(xpath ="//*[@id=\'registration_submit\']")
-//    WebElement register;
-	
+	@FindBy(xpath = "//input[@class='register-profile']")
+	WebElement radio;
+	@FindBy(id = "registration_firstname")
+	WebElement firstname;
+	@FindBy(id = "registration_lastname")
+	WebElement lastname;
+	@FindBy(id = "registration_email")
+	WebElement email;
+	@FindBy(id = "username")
+	WebElement username;
+	@FindBy(id = "pass1")
+	WebElement password;
+	@FindBy(id = "pass2")
+	WebElement confirmpw;
+	@FindBy(id = "registration_phone")
+	WebElement phone;
+	@FindBy(xpath = "//select[@id='registration_language']")
+	WebElement language;
+	@FindBy(id = "registration_submit")
+	WebElement register;
 
-	
-	
-	@FindBy(xpath ="//input[@class='register-profile']")
-    WebElement radio;
-	@FindBy(id ="registration_firstname")
-    WebElement firstname;
-	@FindBy(id ="registration_lastname")
-    WebElement lastname;
-	@FindBy(id ="registration_email")
-    WebElement email;
-	@FindBy(id ="username")
-    WebElement username;
-	@FindBy(id ="pass1")
-    WebElement password;
-	@FindBy(id ="pass2")
-    WebElement confirmpw;
-	@FindBy(id ="registration_phone")
-    WebElement phone;
-	@FindBy(xpath ="//select[@id='registration_language']")
-    WebElement language;
-	@FindBy(id ="registration_submit")
-    WebElement register;
-	
-
-	
-	public RegisterPagePOM UpdateForms()
-	{
-		firstname.sendKeys("rovi");
-		lastname.sendKeys("chapp");
-		email.sendKeys("kavisiva@gmail.com");
-		username.sendKeys("rovichappa");
-		password.sendKeys("rovichap123$");
-		confirmpw.sendKeys("rovichap123$");
-		phone.sendKeys("99431070301");
+	public RegisterPagePOM UpdateForms() {
+		firstname.sendKeys("Anu");
+		lastname.sendKeys("Radha");
+		email.sendKeys("anuradha@gmail.com");
+		username.sendKeys("anuradha");
+		password.sendKeys("anu123$");
+		confirmpw.sendKeys("anu123$");
+		phone.sendKeys("9789089493");
 		selectDropDownUsingText(language, "English");
-		
+
 		return this;
-		}
-	
-	public ConfirmationPagePOM ClickRegister() throws InterruptedException
-	{
-		
+	}
+
+	public ConfirmationPagePOM ClickRegister() throws InterruptedException {
+
 		register.click();
 		return new ConfirmationPagePOM();
-		
+
 	}
-	
+
 	public Boolean radioValue() {
-		
+
 		Boolean rad_Val = radio.isSelected();
 		return rad_Val;
 	}
-	
-	
+
 }

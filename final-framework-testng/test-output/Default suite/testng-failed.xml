@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.test.LostMyPasswordTest">
+      <class name="com.training.simple.test.SignupTest">
         <methods>
-          <include name="SendingMessage"/>
           <include name="BeforeMethod"/>
+          <include name="VerifyRegistration"/>
         </methods>
-      </class> <!-- com.training.test.LostMyPasswordTest -->
+      </class> <!-- com.training.simple.test.SignupTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
