@@ -10,7 +10,6 @@ public class MCreateNewTestPagePOM extends SeleniumMethodsPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 
 	@FindBy(id = "exercise_title")
 	WebElement testname;

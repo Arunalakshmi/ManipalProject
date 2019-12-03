@@ -19,7 +19,6 @@ public class SignupTest extends SeleniumMethodsPOM {
 	public void BeforeTest() {
 		System.out.println("This is Before Test");
 	}
-
 	@BeforeClass
 	public void BeforeClass() {
 		System.out.println("This is Before Class");
