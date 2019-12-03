@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.simple.test.SignupTest">
+      <class name="com.training.medium.tests.ELTCMediumFourthTest">
         <methods>
           <include name="BeforeMethod"/>
-          <include name="VerifyRegistration"/>
+          <include name="BeforeClass"/>
+          <include name="AfterMethod"/>
+          <include name="VerfiyAssignmentTest"/>
+          <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.training.simple.test.SignupTest -->
+      </class> <!-- com.training.medium.tests.ELTCMediumFourthTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

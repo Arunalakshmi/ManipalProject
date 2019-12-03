@@ -28,15 +28,28 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 	@FindBy(xpath = "//div[@class='alert alert-info']")
 	WebElement acknowledgemessage;
 
+	// For MediumTestcase to click create a course link
+	@FindBy(xpath = "//a[contains(text(),'Create a course')]")
+	WebElement createcourselink;
+
 	public String getMessage() {
 		mailacknowledge = acknowledgemessage.getText();
 
 		return mailacknowledge;
 	}
 
+//student login 
 	public CoursePagePOM clicklogin() {
-		username.sendKeys("kavisiva");
-		password.sendKeys("kavitha123$");
+		username.sendKeys("abiarun");
+		password.sendKeys("abi123$");
+		login.click();
+		return new CoursePagePOM();
+
+	}
+	//teacher login 
+	public CoursePagePOM clicklogin1() {
+		username.sendKeys("nikitha");
+		password.sendKeys("nikitha123$");
 		login.click();
 		return new CoursePagePOM();
 
