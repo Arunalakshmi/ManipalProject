@@ -16,9 +16,9 @@ public class MMultipleChoicePagePOM extends SeleniumMethodsPOM {
 	WebElement contentFrameMC;
 	@FindBy(xpath = "//p[1]")
     WebElement first_optionbox;
-//	@FindBy(className = "checkbox")
+//	@FindBy(xpath = "//*[@id=\'qf_b66e02\']")
 //	WebElement firstoptionbox_radiobutton;
-//	@FindBy(className = "checkbox")
+//	@FindBy(xpath = "//*[@id=\'qf_d83c7f\']")
 //	WebElement secondoptionbox_radiobutton;
 	@FindBy(xpath = "//div[@id='cke_4_contents']//iframe[@class='cke_wysiwyg_frame cke_reset']")
 	WebElement contentFrameMC2;
@@ -40,6 +40,7 @@ public class MMultipleChoicePagePOM extends SeleniumMethodsPOM {
 	public MTestaddedConfmPagePOM First_GiveDetails() {
 		enterquestions.sendKeys("which course are you learning");
 		driver.switchTo().frame(contentFrameMC);
+//		firstoptionbox_radiobutton.click();
         first_optionbox.sendKeys("Selenium");
         driver.switchTo().defaultContent();
 		//firstoptionbox_radiobutton.isSelected();
@@ -65,6 +66,7 @@ public class MMultipleChoicePagePOM extends SeleniumMethodsPOM {
         driver.switchTo().defaultContent();
 		//firstoptionbox_radiobutton.isSelected();
         driver.switchTo().frame(contentFrameMC2);
+//        secondoptionbox_radiobutton.click();
 		second_optionbox.sendKeys("java");
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(contentFrameMC3);

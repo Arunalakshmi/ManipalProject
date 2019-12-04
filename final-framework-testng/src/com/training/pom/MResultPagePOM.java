@@ -13,7 +13,7 @@ public class MResultPagePOM extends SeleniumMethodsPOM{
 	
 	@FindBy(xpath = "//div[contains(text(),'Saved.')]")
 	WebElement quiz_saved_message;
-	@FindBy(xpath = "//div[@class='question-result']//div[@class='panel-body']")
+	@FindBy(xpath = "//h3[contains(text(),'Online Quiz : Result')]")
 	WebElement result_message;
 	
 	public String savequiz;

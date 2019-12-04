@@ -19,7 +19,7 @@ public class MCreateNewTestPagePOM extends SeleniumMethodsPOM {
 	WebElement testcontframe;
 	@FindBy(xpath = "//body[@class='cke_editable cke_editable_themed cke_contents_ltr cke_show_borders']")
 	WebElement testcontext;
-	@FindBy(xpath = "//input[@id='exerciseType_0']")
+	@FindBy(xpath = "//label[text()='At end of test']")
 	WebElement feedback_rad_button;
 	@FindBy(xpath= "//input[@name='activate_start_date_check']")
 	WebElement starttimecheckbox;
@@ -35,11 +35,17 @@ public class MCreateNewTestPagePOM extends SeleniumMethodsPOM {
 		driver.switchTo().frame(testcontframe);
 		testcontext.sendKeys("Quiz");
 		driver.switchTo().defaultContent();
-       
+		starttimecheckbox.click();
 		pass_percentage.sendKeys("50");
         proceedtoquestionlink.click();
 		return new MTestaddedConfmPagePOM();
 
+	}
+	
+	public Boolean FBackRadBtn()
+	{
+		Boolean status = feedback_rad_button.isSelected();
+		return status;
 	}
 
 }

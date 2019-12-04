@@ -11,11 +11,11 @@ public MOnlineQuizPagePOM()
 	PageFactory.initElements(driver, this);
 }
 
-@FindBy(xpath = "//input[@class='checkradios']")
+@FindBy(xpath = "//label/p[text()='Selenium']")
 WebElement questions_1_radiobn;
 @FindBy(xpath = "//button[@name='save_now']")
 WebElement nextQuestionslink;
-@FindBy(xpath = "//input[@class='checkradios']")
+@FindBy(xpath = "//label/p[text()='java']")
 WebElement questions_2_radiobn;
 @FindBy(xpath = "//button[@name='save_now']")
 WebElement endTestLink;
@@ -27,20 +27,21 @@ public MOnlineQuizPagePOM GoToNextQuestion() {
 	return this; 
 }
 
-public Boolean radioValue1() {
+public MOnlineQuizPagePOM radioValue1() {
 
-	Boolean rad_Val1 =questions_1_radiobn.isSelected();
-	return rad_Val1;
+	//Boolean rad_Val1 =questions_1_radiobn.isSelected();
+	questions_1_radiobn.click();
+	return this;
 }
 public MResultPagePOM EndTest() {
 	
 	endTestLink.click();
 	return new MResultPagePOM(); 
 }
-public Boolean radioValue2() {
+public MOnlineQuizPagePOM radioValue2() {
 
-	Boolean rad_Val2 =questions_2_radiobn.isSelected();
-	return rad_Val2;
+	questions_2_radiobn.click();
+	return this;
 }
 
 

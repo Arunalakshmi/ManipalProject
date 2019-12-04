@@ -44,6 +44,14 @@ public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
 
 		new MAddIntroductionPagePOM().clickTestLink();
 		new MTestPagePOM().ClickCreateTestLink();
+		Boolean RB = new MCreateNewTestPagePOM().FBackRadBtn();
+		if(RB) {
+			System.out.println("The Feedback radio button is selected");
+		}
+		else
+		{
+			System.out.println("The Feedback radio button is not selected");
+		}
 		new MCreateNewTestPagePOM().UpdateDetails();
 		String tcm = new MTestaddedConfmPagePOM().getMessage();
 		if (tcm.contains("Exercise added")) {
@@ -71,21 +79,21 @@ public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
 		new MTestaddedConfmPagePOM().ClickPreviewButton();
 		new MStartTestPagePOM().ClickStartTest();
 
-		Boolean rad_check1 = new MOnlineQuizPagePOM().radioValue1();
+		new MOnlineQuizPagePOM().radioValue1();
 
 		new MOnlineQuizPagePOM().GoToNextQuestion();
-		Boolean rad_check2 = new MOnlineQuizPagePOM().radioValue2();
+		new MOnlineQuizPagePOM().radioValue2();
 		new MOnlineQuizPagePOM().EndTest();
 		new MResultPagePOM().GetQuizSaveMessage();
 		new MResultPagePOM().GetResultSaveMessage();
 		String qsm = new MResultPagePOM().GetQuizSaveMessage();
-		if (qsm.contains("Saved.") && rad_check1 && rad_check2) {
+		if (qsm.contains("Saved.") ) {
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
 		}
 		String rsm = new MResultPagePOM().GetResultSaveMessage();
-		if (rsm.contains("Onlinequiz : Result")) {
+		if (rsm.contains("Online Quiz : Result")) {
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
