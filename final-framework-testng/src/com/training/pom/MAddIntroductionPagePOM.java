@@ -9,15 +9,19 @@ public class MAddIntroductionPagePOM extends SeleniumMethodsPOM {
 	public MAddIntroductionPagePOM() {
 		PageFactory.initElements(driver, this);
 	}
-
+    //Click Add Introduction icon 
 	@FindBy(xpath = "//div[@class='help-course']//a[@class='btn btn-default']")
 	WebElement addintroductionlink;
+	//Moving to Introduction Frame
 	@FindBy(xpath = "//iframe[@class='cke_wysiwyg_frame cke_reset']")
 	WebElement contentframe;
+	//Adding Text in Frame 
 	@FindBy(xpath = "//body[@class='cke_editable cke_editable_themed cke_contents_ltr cke_show_borders']//p")
 	WebElement contenttext;
+	//Clicking save link
 	@FindBy(id = "introduction_text_intro_cmdUpdate")
 	WebElement saveintrolink;
+	//Webelement for Verfiying the Text Messages 
 	@FindBy(xpath = "//section[@id='main_content']/../div")
 	WebElement intro;
 	@FindBy(xpath = "//div[@class='page-course']//p")
@@ -25,14 +29,14 @@ public class MAddIntroductionPagePOM extends SeleniumMethodsPOM {
 	@FindBy(xpath = "//a[text()='Course description']")
 	WebElement courseDescriptionLink;
 	
-	//MediumSecondtestcase
+	//Click Test Link 
 	@FindBy(linkText = "Tests")
 	WebElement testLink;
 	
-	//MediumFourthestcase
+	//Click assignmentLink 
 	@FindBy(linkText = "Assignments")
 	WebElement assignmentLink;
-	//MediumThirdtestcase
+	//Click AssessmentLink 
 	@FindBy(linkText = "Assessments")
 	WebElement assessLink;
 	

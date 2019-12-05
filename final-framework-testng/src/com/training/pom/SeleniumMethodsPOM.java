@@ -6,10 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.DataProvider;
 
 public class SeleniumMethodsPOM {
 
 	public static RemoteWebDriver driver;
+	public String dataSheetName;
 	public void startapp()
 	{
 		System.setProperty("webdriver.chrome.driver","C:\\ibm automation\\selenium-java-3.141.59 (1)\\chromedriver.exe");
@@ -36,5 +38,9 @@ public class SeleniumMethodsPOM {
 		// TODO Auto-generated method stub
 	driver.quit();
 		
+	}
+	@DataProvider(name="FetchData")
+	public Object[][] giveData(){
+		return TestData.provideData(dataSheetName);
 	}
 }

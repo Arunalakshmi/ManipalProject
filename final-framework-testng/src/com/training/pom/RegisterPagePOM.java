@@ -39,12 +39,12 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 
 	public RegisterPagePOM UpdateForms() {
 		firstname.sendKeys("Sandy");
-		lastname.sendKeys("Sandy");
+		lastname.sendKeys("san");
 		email.sendKeys("sandy@gmail.com");
-		username.sendKeys("sandy");
-		password.sendKeys("sandy123$");
-		confirmpw.sendKeys("sandy123$");
-		phone.sendKeys("9789089492");
+		username.sendKeys("Sandy");
+		password.sendKeys("Sandy@123");
+		confirmpw.sendKeys("Sandy@123");
+		phone.sendKeys("98765432");
 		selectDropDownUsingText(language, "English");
 
 		return this;

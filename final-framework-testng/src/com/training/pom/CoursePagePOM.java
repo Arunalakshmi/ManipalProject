@@ -20,12 +20,15 @@ public class CoursePagePOM extends SeleniumMethodsPOM {
 	WebElement profilelink;
 	@FindBy(xpath = "//a[contains(text(),'Create a course')]")
 	WebElement createcourselink;
-	
-	//MediumSecondtestcase
+
+	// MediumSecondtestcase
 	@FindBy(xpath = "//a[contains(text(),'Selenium')]")
 	WebElement clickaddedcourselink;
-	
 
+	// ComplexFourth test case
+	@FindBy(xpath = "//a[contains(text(),'Course catalog')]")
+	WebElement clickCourse_catalog_Link;
+	// a[contains(text(),'Course catalog')]
 
 	public String getMessage() {
 		Mycoursespage = loginsuccess_message.getText();
@@ -38,19 +41,23 @@ public class CoursePagePOM extends SeleniumMethodsPOM {
 		profilelink.click();
 		return new SocialNetworkpgPOM();
 	}
-	
+
 	public MAddnewcoursepgPOM clickCreateaCourseLink() {
 		createcourselink.click();
 		return new MAddnewcoursepgPOM();
-		
-		
-	}
-	//mediumsecondtestcase
-	public MDescriptionPagePOM clickCourseLink()
-	{
-		clickaddedcourselink.click();
-		return new MDescriptionPagePOM();
-		
-	}
+
 	}
 
+	// mediumsecondtestcase
+	public MDescriptionPagePOM clickCourseLink() {
+		clickaddedcourselink.click();
+		return new MDescriptionPagePOM();
+
+	}
+
+	// Clicking COurse Catalog link
+	public CCourseCatalogPagePOM ClickCCLink() {
+		clickCourse_catalog_Link.click();
+		return new CCourseCatalogPagePOM();
+	}
+}

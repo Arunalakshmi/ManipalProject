@@ -12,7 +12,7 @@ public class ConfirmationPagePOM extends SeleniumMethodsPOM {
 	}
 
 	public String cm;
-
+    
 	@FindBy(xpath = "//body/main[@id='main']/section[@id='cm-content']/div[@class='container']/div[@class='row']/div[@class='col-xs-12 col-md-12']/p[1]")
 	WebElement cfrm_message;
 

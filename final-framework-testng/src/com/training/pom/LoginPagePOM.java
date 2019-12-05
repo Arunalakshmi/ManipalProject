@@ -11,24 +11,28 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 		PageFactory.initElements(driver, this);
 	}
 
+	// Signup button for Registeration
 	@FindBy(xpath = "//a[contains(text(),'Sign up!')]")
 	WebElement signup;
-
+	// Lost my Password Link
 	@FindBy(xpath = "//a[contains(text(),'I lost my password')]")
 	WebElement lostmypassword;
-
+	// User Name
 	@FindBy(id = "login")
 	WebElement username;
+	// Password
 	@FindBy(id = "password")
 	WebElement password;
+	// Login Button
 	@FindBy(id = "form-login_submitAuth")
 	WebElement login;
+
 	public String mailacknowledge;
 
 	@FindBy(xpath = "//div[@class='alert alert-info']")
 	WebElement acknowledgemessage;
 
-	// For MediumTestcase to click create a course link
+	// click create a course link
 	@FindBy(xpath = "//a[contains(text(),'Create a course')]")
 	WebElement createcourselink;
 
@@ -40,13 +44,14 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 
 //student login 
 	public CoursePagePOM clicklogin() {
-		username.sendKeys("abiarun");
-		password.sendKeys("abi123$");
+		username.sendKeys("josh");
+		password.sendKeys("josh123$");
 		login.click();
 		return new CoursePagePOM();
 
 	}
-	//teacher login 
+
+	// teacher login
 	public CoursePagePOM clicklogin1() {
 		username.sendKeys("nikitha");
 		password.sendKeys("nikitha123$");
@@ -55,6 +60,16 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 
 	}
 
+	// Admin login
+	public CAdministrationPagePOM clicklogin2() {
+		username.sendKeys("admin");
+		password.sendKeys("admin@123");
+		login.click();
+		return new CAdministrationPagePOM();
+
+	}
+
+	// Clicking Signup link for Registering (common for teacher,student)
 	public RegisterPagePOM clicksignup() {
 		signup.click();
 		return new RegisterPagePOM();

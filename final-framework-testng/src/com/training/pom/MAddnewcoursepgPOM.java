@@ -9,7 +9,7 @@ public class MAddnewcoursepgPOM extends SeleniumMethodsPOM {
 	public MAddnewcoursepgPOM() {
 		PageFactory.initElements(driver, this);
 	}
-
+    //Elements for adding a new course and clicking create button 
 	@FindBy(id = "title")
 	WebElement coursename;
 	@FindBy(id = "advanced_params")
@@ -24,10 +24,10 @@ public class MAddnewcoursepgPOM extends SeleniumMethodsPOM {
 	WebElement createThisCourseButton;
 
 	public MAddnewcoursepgPOM Updatecoursedetails() {
-		coursename.sendKeys("new17 TESTSELENIUM");
+		coursename.sendKeys("new23TESTSELENIUM");
 		advsettinglink.click();
 		selectDropDownUsingText(categorydd, "Projects (PR001)");
-		coursecode.sendKeys("test18");
+		coursecode.sendKeys("test24");
 		selectDropDownUsingText(language, "English");
 		return this;
 	}
