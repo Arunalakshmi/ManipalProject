@@ -33,9 +33,9 @@ public class SocialNetworkpgPOM extends BaseClassPOM {
 	}
 
 	public SocialNetworkpgPOM editdetails() {
-		pass.sendKeys("arun123$");
-		newpass.sendKeys("abi123$");
-		confirmpass.sendKeys("abi123$");
+		pass.sendKeys("abi123$");
+		newpass.sendKeys("arun123$");
+		confirmpass.sendKeys("arun123$");
 
 		return this;
 	}

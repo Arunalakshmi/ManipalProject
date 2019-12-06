@@ -48,7 +48,7 @@ public class ELTC_Complex_FourthTC extends BaseClassPOM {
 	public void PerformTeacherTask() throws InterruptedException {
 		new LoginPagePOM().clicklogin1();
 		new CoursePagePOM().clickCreateaCourseLink();
-		new MAddnewcoursepgPOM().Updatecoursedetails().clickSubmit();
+		new MAddnewcoursepgPOM().Updatecoursedetails2().clickSubmit();
 		new MAddIntroductionPagePOM().ClickAddintrolink().Enterintroinfo().clickSaveIntroLink();
 		String im = new MAddIntroductionPagePOM().getintroMessage();
 		String igm = new MAddIntroductionPagePOM().getintroinfoMessage();
@@ -88,7 +88,7 @@ public class ELTC_Complex_FourthTC extends BaseClassPOM {
 		}
 
 	}
-//Studnet Login 
+//Student Login 
 	@Test(priority = 2)
 	public void PerformStudentTask() throws InterruptedException {
 

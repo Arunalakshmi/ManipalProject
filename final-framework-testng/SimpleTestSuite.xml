@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TrainingSimpleTestNGSuite">
+<suite name="SimpleTestSuite">
   <test thread-count="1" name="simpletestcaseValidation">
     <classes>
       <class name="com.training.simple.test.LostMyPasswordTest"/>
@@ -9,4 +9,4 @@
       <class name="com.training.simple.test.SignupTest"/>
     </classes>
   </test> <!-- simpletestcaseValidation -->
-</suite> <!-- TrainingSimpleTestNGSuite -->
+</suite> <!-- SimpleTestSuite -->

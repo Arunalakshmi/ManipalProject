@@ -22,16 +22,24 @@ public class MAddnewcoursepgPOM extends BaseClassPOM {
 	WebElement language;
 	@FindBy(xpath = "//button[@id='add_course_submit']")
 	WebElement createThisCourseButton;
-
-	public MAddnewcoursepgPOM Updatecoursedetails() {
-		coursename.sendKeys("new26TESTSELENIUM");
+//Medium Testcase
+	public MAddnewcoursepgPOM Updatecoursedetails1() {
+		coursename.sendKeys("new27TESTSELENIUM");
 		advsettinglink.click();
 		selectDropDownUsingText(categorydd, "Projects (PR001)");
-		coursecode.sendKeys("test27");
+		coursecode.sendKeys("test28");
 		selectDropDownUsingText(language, "English");
 		return this;
 	}
-
+//Complex Test case
+	public MAddnewcoursepgPOM Updatecoursedetails2() {
+		coursename.sendKeys("new28TESTSELENIUM");
+		advsettinglink.click();
+		selectDropDownUsingText(categorydd, "Projects (PR001)");
+		coursecode.sendKeys("test29");
+		selectDropDownUsingText(language, "English");
+		return this;
+	}
 	public MAddIntroductionPagePOM clickSubmit() {
 
 		createThisCourseButton.click();

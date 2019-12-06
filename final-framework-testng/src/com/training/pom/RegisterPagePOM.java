@@ -38,12 +38,12 @@ public class RegisterPagePOM extends BaseClassPOM {
 	WebElement register;
 
 	public RegisterPagePOM UpdateForms() {
-		firstname.sendKeys("Sandy2");
+		firstname.sendKeys("Sandy3");
 		lastname.sendKeys("san");
-		email.sendKeys("sandy2@gmail.com");
-		username.sendKeys("Sandy2");
-		password.sendKeys("Sandy@323");
-		confirmpw.sendKeys("Sandy@323");
+		email.sendKeys("sandy3@gmail.com");
+		username.sendKeys("Sandy3");
+		password.sendKeys("Sandy@423");
+		confirmpw.sendKeys("Sandy@423");
 		phone.sendKeys("98765432");
 		selectDropDownUsingText(language, "English");
 

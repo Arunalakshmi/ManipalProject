@@ -8,11 +8,211 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">59,781</td><td></td><td></td></tr>
+<tr><th colspan="7">SimpleTestSuite</th></tr>
+<tr><td><a href="#t0">simpletestcaseValidation</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">123,266</td><td></td><td></td></tr>
+<tr><th colspan="7">MediumTestSuite</th></tr>
+<tr class="stripe"><td><a href="#t1">mediumtestcaseValidation</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">386,335</td><td></td><td></td></tr>
+<tr><th colspan="7">ComplexTestSuite</th></tr>
+<tr><td><a href="#t2">complextestcaseValidation</a></td><td class="num">11</td><td class="num attn">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">473,737</td><td></td><td></td></tr>
+<tr><th colspan="7">allSuites</th></tr>
+<tr><th>Total</th><th class="num">17</th><th class="num attn">3</th><th class="num">0</th><th class="num attn">3</th><th class="num">983,338</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.training.medium.tests.ELTCMediumSecondTest</td><td><a href="#m0">VerifyTestFunctions</a></td><td rowspan="1">1575603082003</td><td rowspan="1">34017</td></tr></tbody>
-</table>
-<h2>Default test</h2><h3 id="m0">com.training.medium.tests.ELTCMediumSecondTest#VerifyTestFunctions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SimpleTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">simpletestcaseValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.training.simple.test.EditMyProfileTest</td><td><a href="#m0">SaveSettings</a></td><td rowspan="1">1575630522778</td><td rowspan="1">4079</td></tr><tr class="passedodd"><td rowspan="1">com.training.simple.test.LostMyPasswordTest</td><td><a href="#m1">SendingMessage</a></td><td rowspan="1">1575630453057</td><td rowspan="1">14745</td></tr><tr class="passedeven"><td rowspan="1">com.training.simple.test.SignupTest</td><td><a href="#m2">VerifyRegistration</a></td><td rowspan="1">1575630548777</td><td rowspan="1">3538</td></tr><tr class="passedodd"><td rowspan="1">com.training.simple.test.StudentloginTest</td><td><a href="#m3">ClickingSignin</a></td><td rowspan="1">1575630488605</td><td rowspan="1">12993</td></tr></tbody>
+<tbody><tr><th colspan="4">MediumTestSuite</th></tr></tbody><tbody id="t1"><tr><th colspan="4">mediumtestcaseValidation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.training.medium.tests.ELTCMediumFourthTest</td><td><a href="#m4">VerfiyAssignmentTest</a></td><td rowspan="1">1575630862070</td><td rowspan="1">75758</td></tr><tr class="failedodd"><td rowspan="1">com.training.medium.tests.ELTCMediumThirdTest</td><td><a href="#m5">VerifyAssessment</a></td><td rowspan="1">1575630762649</td><td rowspan="1">68834</td></tr><tr><th colspan="4">mediumtestcaseValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.training.medium.tests.ELTCMediumFirstTest</td><td><a href="#m6">VerifyNewCourse</a></td><td rowspan="1">1575630578887</td><td rowspan="1">31119</td></tr><tr class="passedodd"><td rowspan="1">com.training.medium.tests.ELTCMediumSecondTest</td><td><a href="#m7">VerifyTestFunctions</a></td><td rowspan="1">1575630638494</td><td rowspan="1">96969</td></tr></tbody>
+<tbody><tr><th colspan="4">ComplexTestSuite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">complextestcaseValidation &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.training.complex.tests.ELTC_Complex_SecondTC</td><td><a href="#m8">AfterMethod</a></td><td rowspan="1">1575631088259</td><td rowspan="1">60093</td></tr><tr><th colspan="4">complextestcaseValidation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.training.complex.tests.ELTC_Complex_FourthTC</td><td><a href="#m9">PerformTeacherTask</a></td><td rowspan="1">1575631282301</td><td rowspan="1">68774</td></tr><tr><th colspan="4">complextestcaseValidation &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="6">com.training.complex.tests.ELTC_Complex_SecondTC</td><td><a href="#m10">AfterMethod</a></td><td rowspan="3">1575631148445</td><td rowspan="3">-1575631148445</td></tr><tr class="skippedeven"><td><a href="#m11">AfterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m12">AfterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m13">BeforeMethod</a></td><td rowspan="3">1575631148430</td><td rowspan="3">-1575631148430</td></tr><tr class="skippedeven"><td><a href="#m14">BeforeMethod</a></td></tr><tr class="skippedeven"><td><a href="#m15">BeforeMethod</a></td></tr><tr><th colspan="4">complextestcaseValidation &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.training.complex.tests.ELTC_Complex_SecondTC</td><td><a href="#m16">VerifyRegistration</a></td><td rowspan="3">1575631148435</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m17">VerifyRegistration</a></td></tr><tr class="skippedeven"><td><a href="#m18">VerifyRegistration</a></td></tr><tr><th colspan="4">complextestcaseValidation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.training.complex.tests.ELTC_Complex_FirstTC</td><td><a href="#m19">VerifyRegistration</a></td><td rowspan="4">1575631024893</td><td rowspan="4">3390</td></tr><tr class="passedeven"><td><a href="#m20">VerifyRegistration</a></td></tr><tr class="passedeven"><td><a href="#m21">VerifyRegistration</a></td></tr><tr class="passedeven"><td><a href="#m22">VerifyRegistration</a></td></tr><tr class="passedodd"><td rowspan="2">com.training.complex.tests.ELTC_Complex_FourthTC</td><td><a href="#m23">PerformAdminTask</a></td><td rowspan="1">1575631403415</td><td rowspan="1">13575</td></tr><tr class="passedodd"><td><a href="#m24">PerformStudentTask</a></td><td rowspan="1">1575631372235</td><td rowspan="1">11427</td></tr><tr class="passedeven"><td rowspan="1">com.training.complex.tests.ELTC_Complex_SecondTC</td><td><a href="#m25">VerifyRegistration</a></td><td rowspan="1">1575631085879</td><td rowspan="1">2378</td></tr><tr class="passedodd"><td rowspan="4">com.training.complex.tests.ELTC_Complex_ThirdTC</td><td><a href="#m26">VerifyRegistration</a></td><td rowspan="4">1575631230402</td><td rowspan="4">3547</td></tr><tr class="passedodd"><td><a href="#m27">VerifyRegistration</a></td></tr><tr class="passedodd"><td><a href="#m28">VerifyRegistration</a></td></tr><tr class="passedodd"><td><a href="#m29">VerifyRegistration</a></td></tr></tbody>
+<tbody><tr><th colspan="4">allSuites</th></tr></tbody></table>
+<h2>simpletestcaseValidation</h2><h3 id="m0">com.training.simple.test.EditMyProfileTest#SaveSettings</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.training.simple.test.LostMyPasswordTest#SendingMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.training.simple.test.SignupTest#VerifyRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.training.simple.test.StudentloginTest#ClickingSignin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>mediumtestcaseValidation</h2><h3 id="m4">com.training.medium.tests.ELTCMediumFourthTest#VerfiyAssignmentTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#form1_qualification&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir23256_1154542688}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64922}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 6dc9c4280ff96de2250dc5d6b757ef46
+*** Element info: {Using=id, value=form1_qualification}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at com.training.pom.MCreateAssignmentPagePOM.EditMaxScore(MCreateAssignmentPagePOM.java:68)
+	at com.training.medium.tests.ELTCMediumFourthTest.VerfiyAssignmentTest(ELTCMediumFourthTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.training.medium.tests.ELTCMediumThirdTest#VerifyAssessment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#weight_mask&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir20244_541566161}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64828}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 6d466158a09d55ad675a0025f02d9783
+*** Element info: {Using=id, value=weight_mask}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at com.training.pom.MEditlinkPagePOM.EnterWeightage(MEditlinkPagePOM.java:18)
+	at com.training.medium.tests.ELTCMediumThirdTest.VerifyAssessment(ELTCMediumThirdTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.training.medium.tests.ELTCMediumFirstTest#VerifyNewCourse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.training.medium.tests.ELTCMediumSecondTest#VerifyTestFunctions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>complextestcaseValidation</h2><h3 id="m8">com.training.complex.tests.ELTC_Complex_SecondTC#AfterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;dropdown-toggle&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir25116_1318306945}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65261}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a70c022a0058378908451b8ce08cebd5
+*** Element info: {Using=xpath, value=//a[@class=&apos;dropdown-toggle&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.training.pom.BaseClassPOM.logout(BaseClassPOM.java:30)
+	at com.training.complex.tests.ELTC_Complex_SecondTC.AfterMethod(ELTC_Complex_SecondTC.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.training.complex.tests.ELTC_Complex_FourthTC#PerformTeacherTask</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;help-course&apos;]//a[@class=&apos;btn btn-default&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir23720_327679068}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:49169}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 3f40e6c746ffbc722f5e8fad3ef7ba5b
+*** Element info: {Using=xpath, value=//div[@class=&apos;help-course&apos;]//a[@class=&apos;btn btn-default&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.training.pom.MAddIntroductionPagePOM.ClickAddintrolink(MAddIntroductionPagePOM.java:48)
+	at com.training.complex.tests.ELTC_Complex_FourthTC.PerformTeacherTask(ELTC_Complex_FourthTC.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.training.complex.tests.ELTC_Complex_SecondTC#AfterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.training.complex.tests.ELTC_Complex_SecondTC#AfterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.training.complex.tests.ELTC_Complex_SecondTC#AfterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.training.complex.tests.ELTC_Complex_SecondTC#BeforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.training.complex.tests.ELTC_Complex_SecondTC#BeforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.training.complex.tests.ELTC_Complex_SecondTC#BeforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.training.complex.tests.ELTC_Complex_SecondTC#VerifyRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;dropdown-toggle&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir25116_1318306945}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65261}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a70c022a0058378908451b8ce08cebd5
+*** Element info: {Using=xpath, value=//a[@class=&apos;dropdown-toggle&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.training.pom.BaseClassPOM.logout(BaseClassPOM.java:30)
+	at com.training.complex.tests.ELTC_Complex_SecondTC.AfterMethod(ELTC_Complex_SecondTC.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.training.complex.tests.ELTC_Complex_SecondTC#VerifyRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;dropdown-toggle&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir25116_1318306945}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65261}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a70c022a0058378908451b8ce08cebd5
+*** Element info: {Using=xpath, value=//a[@class=&apos;dropdown-toggle&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.training.pom.BaseClassPOM.logout(BaseClassPOM.java:30)
+	at com.training.complex.tests.ELTC_Complex_SecondTC.AfterMethod(ELTC_Complex_SecondTC.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.training.complex.tests.ELTC_Complex_SecondTC#VerifyRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;dropdown-toggle&apos;]&quot;}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-6MESNTB&apos;, ip: &apos;9.199.55.210&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ARUNAL~1\AppData\Local\Temp\scoped_dir25116_1318306945}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65261}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a70c022a0058378908451b8ce08cebd5
+*** Element info: {Using=xpath, value=//a[@class=&apos;dropdown-toggle&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.training.pom.BaseClassPOM.logout(BaseClassPOM.java:30)
+	at com.training.complex.tests.ELTC_Complex_SecondTC.AfterMethod(ELTC_Complex_SecondTC.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.training.complex.tests.ELTC_Complex_FirstTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupa15</td><td>user</td><td>test3@gmail.com</td><td>TestSignupa15</td><td>Test7@123</td><td>Test7@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.training.complex.tests.ELTC_Complex_FirstTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupa17</td><td>user</td><td>test1@gmail.com</td><td>TestSignupa17</td><td>Test5@123</td><td>Test5@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.training.complex.tests.ELTC_Complex_FirstTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupa14</td><td>user</td><td>test2@gmail.com</td><td>TestSignupa14</td><td>Test6@123</td><td>Test6@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.training.complex.tests.ELTC_Complex_FirstTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupa16</td><td>user</td><td>test4@gmail.com</td><td>TestSignupa16</td><td>Test8@123</td><td>Test8@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.training.complex.tests.ELTC_Complex_FourthTC#PerformAdminTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.training.complex.tests.ELTC_Complex_FourthTC#PerformStudentTask</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.training.complex.tests.ELTC_Complex_SecondTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>1234</td><td>user</td><td>test123@gmail.com</td><td>$#$^&amp;3</td><td>test@123</td><td>test@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.training.complex.tests.ELTC_Complex_ThirdTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupb11</td><td>user</td><td>test11@gmail.com</td><td>TestSignupb11</td><td>Test11@123</td><td>Test11@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.training.complex.tests.ELTC_Complex_ThirdTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupb12</td><td>user</td><td>test12@gmail.com</td><td>TestSignupb12</td><td>Test12@123</td><td>Test12@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.training.complex.tests.ELTC_Complex_ThirdTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupb10</td><td>user</td><td>test10@gmail.com</td><td>TestSignupb10</td><td>Test10@123</td><td>Test10@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.training.complex.tests.ELTC_Complex_ThirdTC#VerifyRegistration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>TestSignupb9</td><td>user</td><td>test9@gmail.com</td><td>TestSignupb9</td><td>Test9@123</td><td>Test9@123</td><td>9876543210</td><td>English</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

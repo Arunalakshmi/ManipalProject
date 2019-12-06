@@ -3,10 +3,11 @@
 <suite name="MediumTestSuite">
   <test thread-count="1" name="mediumtestcaseValidation">
     <classes>
-      <class name="com.training.medium.test.ELTCMediumFirstTest"/>
-      <class name="com.training.medium.test.ELTCMediumSecondTest"/>
-      <class name="com.training.medium.test.ELTCMediumThirdTest"/>
-      <class name="com.training.medium.test.ELTCMediumFourthTest"/>
+      <class name="com.training.medium.tests.ELTCMediumFirstTest"/>
+      <class name="com.training.medium.tests.ELTCMediumSecondTest"/>
+      <class name="com.training.medium.tests.ELTCMediumThirdTest"/>
+      <class name="com.training.medium.tests.ELTCMediumFourthTest"/>
     </classes>
   </test> <!-- mediumtestcaseValidation -->
 </suite> <!-- MediumTestsuite -->
+

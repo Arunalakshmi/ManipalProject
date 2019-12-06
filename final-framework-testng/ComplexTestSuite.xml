@@ -3,10 +3,10 @@
 <suite name="ComplexTestSuite">
   <test thread-count="1" name="complextestcaseValidation">
     <classes>
-      <class name="com.training.medium.test.ELTC_Complex_FirstTC"/>
-      <class name="com.training.medium.test.ELTC_Complex_SecondTC"/>
-      <class name="com.training.medium.test.ELTC_Complex_ThirdTC"/>
-      <class name="com.training.medium.test.ELTC_Complex_FourthTC"/>
+      <class name="com.training.complex.tests.ELTC_Complex_FirstTC"/>
+      <class name="com.training.complex.tests.ELTC_Complex_SecondTC"/>
+      <class name="com.training.complex.tests.ELTC_Complex_ThirdTC"/>
+      <class name="com.training.complex.tests.ELTC_Complex_FourthTC"/>
     </classes>
   </test> <!-- complextestcaseValidation -->
 </suite> <!-- ComplexTestSuite -->

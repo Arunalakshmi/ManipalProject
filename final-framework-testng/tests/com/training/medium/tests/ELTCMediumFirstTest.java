@@ -43,7 +43,7 @@ public class ELTCMediumFirstTest extends BaseClassPOM {
 	@Test(priority = 5)
 	public void VerifyNewCourse() throws InterruptedException {
 		new CoursePagePOM().clickCreateaCourseLink();
-		new MAddnewcoursepgPOM().Updatecoursedetails().clickSubmit();
+		new MAddnewcoursepgPOM().Updatecoursedetails1().clickSubmit();
 		new MAddIntroductionPagePOM().ClickAddintrolink().Enterintroinfo().clickSaveIntroLink();
 		String im = new MAddIntroductionPagePOM().getintroMessage();
 		String igm = new MAddIntroductionPagePOM().getintroinfoMessage();
