@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CLearnersPagePOM extends SeleniumMethodsPOM {
+public class CLearnersPagePOM extends BaseClassPOM {
 
 	public CLearnersPagePOM() {
 		PageFactory.initElements(driver, this);

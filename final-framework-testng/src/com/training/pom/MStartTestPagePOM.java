@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MStartTestPagePOM extends SeleniumMethodsPOM {
+public class MStartTestPagePOM extends BaseClassPOM {
 	public MStartTestPagePOM() {
 		
 		PageFactory.initElements(driver, this);

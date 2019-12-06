@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CCourseCatalogPagePOM extends SeleniumMethodsPOM {
+public class CCourseCatalogPagePOM extends BaseClassPOM {
 
 	public CCourseCatalogPagePOM() {
 

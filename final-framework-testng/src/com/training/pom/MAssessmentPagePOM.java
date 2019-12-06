@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MAssessmentPagePOM extends SeleniumMethodsPOM{
+public class MAssessmentPagePOM extends BaseClassPOM{
 	
 	public MAssessmentPagePOM()
 	{

@@ -13,9 +13,9 @@ import com.training.pom.MAddIntroductionPagePOM;
 import com.training.pom.MAssignmentPagePOM;
 import com.training.pom.MAssignmentSuccessPagePOM;
 import com.training.pom.MCreateAssignmentPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class ELTCMediumFourthTest extends SeleniumMethodsPOM {
+public class ELTCMediumFourthTest extends BaseClassPOM {
 
 	public ELTCMediumFourthTest() {
 		PageFactory.initElements(driver, this);
@@ -70,7 +70,7 @@ public class ELTCMediumFourthTest extends SeleniumMethodsPOM {
 
 	@AfterMethod
 	public void AfterMethod() {
-
+        logout();
 		closeBrowser();
 
 	}

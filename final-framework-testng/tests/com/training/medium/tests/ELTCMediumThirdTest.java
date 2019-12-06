@@ -15,9 +15,9 @@ import com.training.pom.MAddOnlineActivityPagePOM;
 import com.training.pom.MAssessmentPagePOM;
 import com.training.pom.MDefaultCertificatePagePOM;
 import com.training.pom.MEditlinkPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class ELTCMediumThirdTest extends SeleniumMethodsPOM {
+public class ELTCMediumThirdTest extends BaseClassPOM {
 	
 	public ELTCMediumThirdTest()
 	{
@@ -71,7 +71,7 @@ public class ELTCMediumThirdTest extends SeleniumMethodsPOM {
 		
 		@AfterMethod
 		public void AfterMethod() {
-
+            logout();
 			closeBrowser();
 
 		}

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterPage_invalid_stu_POM extends SeleniumMethodsPOM {
+public class RegisterPage_invalid_stu_POM extends BaseClassPOM {
 
 	public RegisterPage_invalid_stu_POM() {
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SocialNetworkpgPOM extends SeleniumMethodsPOM {
+public class SocialNetworkpgPOM extends BaseClassPOM {
 
 	public SocialNetworkpgPOM() {
 
@@ -33,9 +33,9 @@ public class SocialNetworkpgPOM extends SeleniumMethodsPOM {
 	}
 
 	public SocialNetworkpgPOM editdetails() {
-		pass.sendKeys("kavitha123$");
-		newpass.sendKeys("aruna123$");
-		confirmpass.sendKeys("aruna123$");
+		pass.sendKeys("arun123$");
+		newpass.sendKeys("abi123$");
+		confirmpass.sendKeys("abi123$");
 
 		return this;
 	}

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MCreateNewTestPagePOM extends SeleniumMethodsPOM {
+public class MCreateNewTestPagePOM extends BaseClassPOM {
 
 	public MCreateNewTestPagePOM() {
 		PageFactory.initElements(driver, this);
@@ -29,17 +29,23 @@ public class MCreateNewTestPagePOM extends SeleniumMethodsPOM {
 	@FindBy(id = "exercise_admin_submitExercise")
 	WebElement proceedtoquestionlink;
 
-	public MTestaddedConfmPagePOM UpdateDetails() {
-		testname.sendKeys("Online Quiz");
+	public MCreateNewTestPagePOM UpdateDetails() {
+		testname.sendKeys("Selenium Online Quiz");
 		advsettinglink.click();
 		driver.switchTo().frame(testcontframe);
-		testcontext.sendKeys("Quiz");
+		testcontext.sendKeys("Mock Quiz");
 		driver.switchTo().defaultContent();
 		starttimecheckbox.click();
 		pass_percentage.sendKeys("50");
-        proceedtoquestionlink.click();
-		return new MTestaddedConfmPagePOM();
+        
+		return this;
 
+	}
+	
+	public MTestaddedConfmPagePOM ClickProceedLink() {
+		proceedtoquestionlink.click();
+		return new MTestaddedConfmPagePOM();
+		
 	}
 	
 	public Boolean FBackRadBtn()

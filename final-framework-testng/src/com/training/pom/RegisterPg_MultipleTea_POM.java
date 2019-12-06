@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterPg_MultipleTea_POM extends SeleniumMethodsPOM {
+public class RegisterPg_MultipleTea_POM extends BaseClassPOM {
 
 	public RegisterPg_MultipleTea_POM() {
 

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MAddIntroductionPagePOM extends SeleniumMethodsPOM {
+public class MAddIntroductionPagePOM extends BaseClassPOM {
 
 	public MAddIntroductionPagePOM() {
 		PageFactory.initElements(driver, this);

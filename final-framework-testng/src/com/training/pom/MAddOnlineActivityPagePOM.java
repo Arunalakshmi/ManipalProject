@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MAddOnlineActivityPagePOM extends SeleniumMethodsPOM {
+public class MAddOnlineActivityPagePOM extends BaseClassPOM {
 
 	public MAddOnlineActivityPagePOM() {
 		PageFactory.initElements(driver, this);

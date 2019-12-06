@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MCreateAssignmentPagePOM extends SeleniumMethodsPOM {
+public class MCreateAssignmentPagePOM extends BaseClassPOM {
 
 	public MCreateAssignmentPagePOM() {
 		PageFactory.initElements(driver, this);

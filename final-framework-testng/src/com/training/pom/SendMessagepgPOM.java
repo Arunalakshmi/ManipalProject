@@ -1,11 +1,10 @@
 package com.training.pom;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SendMessagepgPOM extends SeleniumMethodsPOM {
+public class SendMessagepgPOM extends BaseClassPOM {
 
 	public SendMessagepgPOM() {
 		PageFactory.initElements(driver, this);
@@ -22,4 +21,5 @@ public class SendMessagepgPOM extends SeleniumMethodsPOM {
 		sendmessagelink.click();
 		return new LoginPagePOM();
 	}
+
 }

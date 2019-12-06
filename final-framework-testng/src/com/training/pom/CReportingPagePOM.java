@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CReportingPagePOM extends SeleniumMethodsPOM {
+public class CReportingPagePOM extends BaseClassPOM {
 
 	public CReportingPagePOM() {
 

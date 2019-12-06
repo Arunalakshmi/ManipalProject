@@ -18,9 +18,9 @@ import com.training.pom.MDescriptionPagePOM;
 import com.training.pom.MObjectivePagePOM;
 import com.training.pom.MTopicsPagePOM;
 import com.training.pom.RegisterPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class ELTCMediumFirstTest extends SeleniumMethodsPOM {
+public class ELTCMediumFirstTest extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -40,7 +40,7 @@ public class ELTCMediumFirstTest extends SeleniumMethodsPOM {
 
 	}
 
-	@Test
+	@Test(priority = 5)
 	public void VerifyNewCourse() throws InterruptedException {
 		new CoursePagePOM().clickCreateaCourseLink();
 		new MAddnewcoursepgPOM().Updatecoursedetails().clickSubmit();
@@ -65,39 +65,28 @@ public class ELTCMediumFirstTest extends SeleniumMethodsPOM {
 		new MTopicsPagePOM().UpdateTopDetails().clickTopSaveLink();
 		String newtop_info = new MDescriptionPagePOM().TopText();
 
-		
-
-		
-
-//		if (newdes_info == "The description has been updated" && newobj_info == "The description has been updated"
-//				&& newtop_info == "The description has been updated") {
-//			System.out.println("Test Passed");
-//		} else {
-//			System.out.println("Test Failed");
-//		}
-		if (newdes_info.contains("The description has been updated"))  {
+		if (newdes_info.contains("The description has been updated")) {
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
 		}
 
-		if (newobj_info.contains("The description has been updated"))
-				{
+		if (newobj_info.contains("The description has been updated")) {
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
 		}
-		if (newtop_info .contains("The description has been updated"))
-		{
-	System.out.println("Test Passed");
-} else {
-	System.out.println("Test Failed");
-}
+		if (newtop_info.contains("The description has been updated")) {
+			System.out.println("Test Passed");
+		} else {
+			System.out.println("Test Failed");
+		}
 	}
 
 	@AfterMethod
 	public void AfterMethod() {
-
+		logout();
+		System.out.println("Logout success");
 		closeBrowser();
 
 	}

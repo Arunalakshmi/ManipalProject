@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-05T22:10:15 IST" name="Default suite" finished-at="2019-12-05T22:10:44 IST" duration-ms="28972">
+  <suite started-at="2019-12-06T09:00:57 IST" name="Default suite" finished-at="2019-12-06T09:01:57 IST" duration-ms="59781">
     <groups>
     </groups>
-    <test started-at="2019-12-05T22:10:15 IST" name="Default test" finished-at="2019-12-05T22:10:44 IST" duration-ms="28972">
-      <class name="com.training.complex.tests.ELTC_Complex_FourthTC">
-        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:com.training.complex.tests.ELTC_Complex_FourthTC@6ac13091]" started-at="2019-12-05T22:10:15 IST" name="BeforeTest" finished-at="2019-12-05T22:10:15 IST" duration-ms="22" status="PASS">
+    <test started-at="2019-12-06T09:00:57 IST" name="Default test" finished-at="2019-12-06T09:01:57 IST" duration-ms="59781">
+      <class name="com.training.medium.tests.ELTCMediumSecondTest">
+        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:com.training.medium.tests.ELTCMediumSecondTest@48fa0f47]" started-at="2019-12-06T09:00:57 IST" name="BeforeTest" finished-at="2019-12-06T09:00:57 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.training.complex.tests.ELTC_Complex_FourthTC@6ac13091]" started-at="2019-12-05T22:10:15 IST" name="BeforeClass" finished-at="2019-12-05T22:10:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.training.medium.tests.ELTCMediumSecondTest@48fa0f47]" started-at="2019-12-06T09:00:57 IST" name="BeforeClass" finished-at="2019-12-06T09:00:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.training.complex.tests.ELTC_Complex_FourthTC@6ac13091]" started-at="2019-12-05T22:10:15 IST" name="BeforeMethod" finished-at="2019-12-05T22:10:32 IST" duration-ms="16940" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.training.medium.tests.ELTCMediumSecondTest@48fa0f47]" started-at="2019-12-06T09:00:57 IST" name="BeforeMethod" finished-at="2019-12-06T09:01:22 IST" duration-ms="24173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="PerformAdminTask()[pri:3, instance:com.training.complex.tests.ELTC_Complex_FourthTC@6ac13091]" started-at="2019-12-05T22:10:32 IST" name="PerformAdminTask" finished-at="2019-12-05T22:10:43 IST" duration-ms="11809" status="PASS">
+        <test-method signature="VerifyTestFunctions()[pri:0, instance:com.training.medium.tests.ELTCMediumSecondTest@48fa0f47]" started-at="2019-12-06T09:01:22 IST" name="VerifyTestFunctions" finished-at="2019-12-06T09:01:56 IST" duration-ms="34017" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PerformAdminTask -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.training.complex.tests.ELTC_Complex_FourthTC@6ac13091]" started-at="2019-12-05T22:10:43 IST" name="AfterMethod" finished-at="2019-12-05T22:10:44 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- VerifyTestFunctions -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:com.training.medium.tests.ELTCMediumSecondTest@48fa0f47]" started-at="2019-12-06T09:01:56 IST" name="AfterMethod" finished-at="2019-12-06T09:01:57 IST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-      </class> <!-- com.training.complex.tests.ELTC_Complex_FourthTC -->
+      </class> <!-- com.training.medium.tests.ELTCMediumSecondTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

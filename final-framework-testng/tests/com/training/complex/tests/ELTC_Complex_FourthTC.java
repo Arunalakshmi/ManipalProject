@@ -23,9 +23,9 @@ import com.training.pom.MDescriptionPagePOM;
 import com.training.pom.MObjectivePagePOM;
 import com.training.pom.MTopicsPagePOM;
 
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class ELTC_Complex_FourthTC extends SeleniumMethodsPOM {
+public class ELTC_Complex_FourthTC extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -43,8 +43,8 @@ public class ELTC_Complex_FourthTC extends SeleniumMethodsPOM {
 		startapp();
 
 	}
-
-	@Test(enabled = false)
+//Teacher Login 
+	@Test(priority = 1)
 	public void PerformTeacherTask() throws InterruptedException {
 		new LoginPagePOM().clicklogin1();
 		new CoursePagePOM().clickCreateaCourseLink();
@@ -88,8 +88,8 @@ public class ELTC_Complex_FourthTC extends SeleniumMethodsPOM {
 		}
 
 	}
-
-	@Test(enabled=false)
+//Studnet Login 
+	@Test(priority = 2)
 	public void PerformStudentTask() throws InterruptedException {
 
 		new LoginPagePOM().clicklogin();
@@ -106,6 +106,8 @@ public class ELTC_Complex_FourthTC extends SeleniumMethodsPOM {
 //		}
 
 	}
+	
+	//Admin Login 
 
 	@Test(priority = 3)
 	public void PerformAdminTask() throws InterruptedException {
@@ -127,7 +129,7 @@ public class ELTC_Complex_FourthTC extends SeleniumMethodsPOM {
 
 	@AfterMethod
 	public void AfterMethod() {
-
+		logout();
 		closeBrowser();
 
 	}

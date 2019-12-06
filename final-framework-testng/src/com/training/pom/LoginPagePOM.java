@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPagePOM extends SeleniumMethodsPOM {
+public class LoginPagePOM extends BaseClassPOM {
 
 	public LoginPagePOM() {
 		PageFactory.initElements(driver, this);
@@ -44,8 +44,16 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 
 //student login 
 	public CoursePagePOM clicklogin() {
-		username.sendKeys("josh");
-		password.sendKeys("josh123$");
+		username.sendKeys("Sandy1");
+		password.sendKeys("Sandy@223");
+		login.click();
+		return new CoursePagePOM();
+
+	}
+	//EditProfile Function validation for student
+	public CoursePagePOM clicklogin4() {
+		username.sendKeys("abiarun");
+		password.sendKeys("abi123$");
 		login.click();
 		return new CoursePagePOM();
 
@@ -53,8 +61,8 @@ public class LoginPagePOM extends SeleniumMethodsPOM {
 
 	// teacher login
 	public CoursePagePOM clicklogin1() {
-		username.sendKeys("nikitha");
-		password.sendKeys("nikitha123$");
+		username.sendKeys("kamala");
+		password.sendKeys("kamala123$");
 		login.click();
 		return new CoursePagePOM();
 

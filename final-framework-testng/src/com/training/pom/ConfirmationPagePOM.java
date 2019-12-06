@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ConfirmationPagePOM extends SeleniumMethodsPOM {
+public class ConfirmationPagePOM extends BaseClassPOM {
 
 	public ConfirmationPagePOM() {
 		PageFactory.initElements(driver, this);

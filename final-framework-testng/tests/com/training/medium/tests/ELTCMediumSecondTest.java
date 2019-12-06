@@ -1,5 +1,8 @@
 package com.training.medium.tests;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -17,9 +20,9 @@ import com.training.pom.MStartTestPagePOM;
 import com.training.pom.MTestPagePOM;
 import com.training.pom.MTestaddedConfmPagePOM;
 import com.training.pom.RegisterPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
+public class ELTCMediumSecondTest extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -44,15 +47,11 @@ public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
 
 		new MAddIntroductionPagePOM().clickTestLink();
 		new MTestPagePOM().ClickCreateTestLink();
-		Boolean RB = new MCreateNewTestPagePOM().FBackRadBtn();
-		if(RB) {
-			System.out.println("The Feedback radio button is selected");
-		}
-		else
-		{
-			System.out.println("The Feedback radio button is not selected");
-		}
 		new MCreateNewTestPagePOM().UpdateDetails();
+//		Boolean RB = new MCreateNewTestPagePOM().FBackRadBtn();
+//		Assert.assertTrue(RB);
+		new MCreateNewTestPagePOM().ClickProceedLink();
+
 		String tcm = new MTestaddedConfmPagePOM().getMessage();
 		if (tcm.contains("Exercise added")) {
 			System.out.println("Test Passed");
@@ -87,7 +86,7 @@ public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
 		new MResultPagePOM().GetQuizSaveMessage();
 		new MResultPagePOM().GetResultSaveMessage();
 		String qsm = new MResultPagePOM().GetQuizSaveMessage();
-		if (qsm.contains("Saved.") ) {
+		if (qsm.contains("Saved.")) {
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
@@ -102,7 +101,8 @@ public class ELTCMediumSecondTest extends SeleniumMethodsPOM {
 
 	@AfterMethod
 	public void AfterMethod() {
-
+		logout();
+		System.out.println("Logout success");
 		closeBrowser();
 
 	}

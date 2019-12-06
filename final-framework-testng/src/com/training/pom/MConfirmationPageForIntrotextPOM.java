@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MConfirmationPageForIntrotextPOM extends SeleniumMethodsPOM {
+public class MConfirmationPageForIntrotextPOM extends BaseClassPOM {
 
 	
 	public MConfirmationPageForIntrotextPOM() {

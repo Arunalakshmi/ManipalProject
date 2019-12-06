@@ -1,5 +1,6 @@
 package com.training.simple.test;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.BeforeMethod;
@@ -7,10 +8,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.pom.LoginPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 import com.training.pom.SendMessagepgPOM;
 
-public class LostMyPasswordTest extends SeleniumMethodsPOM {
+public class LostMyPasswordTest extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -28,7 +29,7 @@ public class LostMyPasswordTest extends SeleniumMethodsPOM {
 
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void SendingMessage() throws InterruptedException {
 		new LoginPagePOM().clicklostpasswordlink();
 		new SendMessagepgPOM().TypeUserName();
@@ -40,7 +41,13 @@ public class LostMyPasswordTest extends SeleniumMethodsPOM {
 		} else {
 			System.out.println("Test Failed");
 		}
+		
 
 	}
+	@AfterMethod
+	public void AfterMethod() {
+       
+		closeBrowser();
 
+}
 }

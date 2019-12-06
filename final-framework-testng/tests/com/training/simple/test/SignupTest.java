@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeTest;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.Test;
@@ -11,9 +12,9 @@ import org.testng.annotations.Test;
 import com.training.pom.ConfirmationPagePOM;
 import com.training.pom.LoginPagePOM;
 import com.training.pom.RegisterPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 
-public class SignupTest extends SeleniumMethodsPOM {
+public class SignupTest extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -30,13 +31,14 @@ public class SignupTest extends SeleniumMethodsPOM {
 		new LoginPagePOM().clicksignup();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void VerifyRegistration() throws InterruptedException {
 		Boolean rad_check = new RegisterPagePOM().radioValue();
+		Assert.assertTrue(rad_check);
 		new RegisterPagePOM().UpdateForms().ClickRegister();
 
 		String ar = new ConfirmationPagePOM().getMessage();
-		if (ar.contains("Your personal settings have been registered") && rad_check) {
+		if (ar.contains("Your personal settings have been registered")){
 			System.out.println("Test Passed");
 		} else {
 			System.out.println("Test Failed");
@@ -46,7 +48,8 @@ public class SignupTest extends SeleniumMethodsPOM {
 
 	@AfterMethod
 	public void AfterMethod() {
-
+        logout();
+        System.out.println("Logout is suceesful");
 		closeBrowser();
 
 	}

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MAddnewcoursepgPOM extends SeleniumMethodsPOM {
+public class MAddnewcoursepgPOM extends BaseClassPOM {
 
 	public MAddnewcoursepgPOM() {
 		PageFactory.initElements(driver, this);
@@ -24,10 +24,10 @@ public class MAddnewcoursepgPOM extends SeleniumMethodsPOM {
 	WebElement createThisCourseButton;
 
 	public MAddnewcoursepgPOM Updatecoursedetails() {
-		coursename.sendKeys("new23TESTSELENIUM");
+		coursename.sendKeys("new26TESTSELENIUM");
 		advsettinglink.click();
 		selectDropDownUsingText(categorydd, "Projects (PR001)");
-		coursecode.sendKeys("test24");
+		coursecode.sendKeys("test27");
 		selectDropDownUsingText(language, "English");
 		return this;
 	}

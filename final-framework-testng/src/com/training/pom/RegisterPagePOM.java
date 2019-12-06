@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterPagePOM extends SeleniumMethodsPOM {
+public class RegisterPagePOM extends BaseClassPOM {
 
 	public RegisterPagePOM() {
 
@@ -38,12 +38,12 @@ public class RegisterPagePOM extends SeleniumMethodsPOM {
 	WebElement register;
 
 	public RegisterPagePOM UpdateForms() {
-		firstname.sendKeys("Sandy");
+		firstname.sendKeys("Sandy2");
 		lastname.sendKeys("san");
-		email.sendKeys("sandy@gmail.com");
-		username.sendKeys("Sandy");
-		password.sendKeys("Sandy@123");
-		confirmpw.sendKeys("Sandy@123");
+		email.sendKeys("sandy2@gmail.com");
+		username.sendKeys("Sandy2");
+		password.sendKeys("Sandy@323");
+		confirmpw.sendKeys("Sandy@323");
 		phone.sendKeys("98765432");
 		selectDropDownUsingText(language, "English");
 

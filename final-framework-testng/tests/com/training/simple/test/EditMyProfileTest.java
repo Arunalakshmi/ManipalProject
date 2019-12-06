@@ -1,5 +1,6 @@
 package com.training.simple.test;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -7,10 +8,10 @@ import org.testng.annotations.BeforeMethod;
 
 import com.training.pom.CoursePagePOM;
 import com.training.pom.LoginPagePOM;
-import com.training.pom.SeleniumMethodsPOM;
+import com.training.pom.BaseClassPOM;
 import com.training.pom.SocialNetworkpgPOM;
 
-public class EditMyProfileTest extends SeleniumMethodsPOM {
+public class EditMyProfileTest extends BaseClassPOM {
 
 	@BeforeTest
 	public void BeforeTest() {
@@ -26,11 +27,11 @@ public class EditMyProfileTest extends SeleniumMethodsPOM {
 	public void BeforeMethod() {
 		startapp();
 
-		new LoginPagePOM().clicklogin();
+		new LoginPagePOM().clicklogin4();
 
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void SaveSettings() throws InterruptedException {
 
 		new CoursePagePOM().clickprofilelink();
@@ -41,6 +42,14 @@ public class EditMyProfileTest extends SeleniumMethodsPOM {
 		} else {
 			System.out.println("Test Failed");
 		}
+
+	}
+	
+	@AfterMethod
+	public void AfterMethod() {
+        logout();
+        System.out.println("Logout success");
+		closeBrowser();
 
 	}
 

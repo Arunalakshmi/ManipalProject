@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 
 import com.training.bean.LoginBean;
 import com.training.dao.ELearningDAO;
+import com.training.pom.TestData;
 import com.training.readexcel.ApachePOIExcelRead;
 import com.training.readexcel.ReadExcel;
 
@@ -41,4 +42,9 @@ public class LoginDataProviders {
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
 	}
+	
+//	@DataProvider(name = "FetchData")
+//	public Object[][] giveData() {
+//		return TestData.provideData(dataSheetName);
+//	}
 }
